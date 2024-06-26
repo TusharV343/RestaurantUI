@@ -1,0 +1,37 @@
+<!-- <div class="container">
+    <h2 style="text-align: center; color: maroon;">5-Star Restaurant Menu</h2>
+  
+    <ul class="menu-list">
+      <li *ngFor="let item of menu" class="menu-item">
+        <h3>{{item.id}}</h3>
+        <h3>{{ item.itemName }}</h3>
+        <p style="color: maroon;">Price: Rs.{{ item.itemPrice }}</p>
+        <div>
+          <button (click)="updateMenu(item)">Edit</button>
+          <button (click)="deleteMenu(item)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  
+    <div *ngIf="editMenuItem" class="edit-form">
+      <h3>Edit Menu Item</h3>
+      <form>
+        <label for="editItemName">Item Name:</label>
+        <input id="editItemName" [(ngModel)]="editMenuItem.itemName" name="editItemName" type="text" />
+        <label for="editItemPrice">Item Price:</label>
+        <input id="editItemPrice" [(ngModel)]="editMenuItem.itemPrice" name="editItemPrice" type="text" />
+        <button type="button" (click)="saveMenu()">Save</button>
+        <button type="button" (click)="cancelEdit()">Cancel</button>
+      </form>
+    </div>
+  
+    <h3 style="color: maroon;">Add New Menu Item</h3>
+    <form>
+      <label for="itemName" style="color: maroon;">Item Name:</label>
+      <input id="itemName" [(ngModel)]="newMenuItem.itemName" name="itemName" type="text" />
+      <label for="itemPrice" style="color: maroon;">Item Price:</label>
+      <input id="itemPrice" [(ngModel)]="newMenuItem.itemPrice" name="itemPrice" type="text" />
+      <button type="button" (click)="addMenu()">Add Item</button>
+    </form>
+  </div>
+   -->

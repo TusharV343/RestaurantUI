@@ -1,0 +1,30 @@
+
+ <div class="container">
+    <h2 style="text-align: center; color: maroon;">5-Star Restaurant Menu</h2>
+
+    <ul class="menu-list">
+        <li *ngFor="let item of menu" class="menu-item">
+            <h3>{{ item.id }}</h3>
+            <h3>{{ item.itemName }}</h3>
+            <p style="color: maroon;">Price: Rs.{{ item.itemPrice }}</p>
+            <div>
+                <button (click)="addToCart(item)">Add to Cart</button>
+            </div>
+        </li>
+    </ul>
+
+    <div class="container">
+        <h2 style="text-align: center; color: maroon;">Cart</h2>
+        <ul>
+            <li *ngFor="let item of cart.menu" class="cart-item">
+                {{ item.id }}. {{ item.itemName }} - Rs.{{ item.itemPrice }}
+                <button (click)="removeFromCart(item)">-</button>
+                <span>{{ item.quantity }}</span>
+                <button (click)="addToCart(item)">+</button>
+            </li>
+        </ul>
+        <p style="color: maroon;">Total Price: Rs.{{ cart.totalPrice }}</p>
+    </div>
+</div>
+
+  

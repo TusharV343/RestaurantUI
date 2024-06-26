@@ -1,0 +1,106 @@
+/* Global Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f5f5dc; /* Beige background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Menu List Styling */
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: maroon; /* Maroon text color */
+  }
+  
+  .menu-item p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #666666;
+  }
+  
+  .menu-item button {
+    background-color: maroon; /* Maroon button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item button:hover {
+    background-color: #800000; /* Darker maroon on hover */
+  }
+  
+  /* Edit Form */
+  .edit-form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-form h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: maroon; /* Maroon text color */
+  }
+  
+  .edit-form label {
+    font-size: 1.2rem;
+    color: maroon; /* Maroon label color */
+  }
+  
+  .edit-form input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .edit-form button {
+    margin-top: 10px;
+    background-color: maroon; /* Maroon button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background-color: #800000; /* Darker maroon on hover */
+  }
+  

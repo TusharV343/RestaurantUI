@@ -1,0 +1,10 @@
+<div>
+  <!-- <h1>Welcome to the Application</h1> -->
+  <div *ngIf="!authService.isAuthenticated()">
+    <router-outlet></router-outlet>
+  </div>
+  <div *ngIf="authService.isAuthenticated()">
+    <!-- <app-home></app-home> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
